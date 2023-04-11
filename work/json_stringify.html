@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="myDog"></p>
+    <script>
+        /* JavaScript dictionary object */
+        var dog = { name: "Dax", breed: "Great Pyrenees", color: "White" };
+
+        /* Convert JavaScript objects to string format */
+        var JSONstring = JSON.stringify(dog);
+        document.getElementById("myDog").innerHTML = JSONstring;
+    </script>
+
+
+    <!--    JSON (pronounced “Jay-Son”) is short for JavaScript Object Notation.
+
+        JSON is a way to represent a specific object, using the JavaScript language.
+        This can be useful in exchanging data between different computers or computer programs.
+        In fact, JSON is what is known as a “data-interchange format” — a method of 
+        formatting data in a manner that is easily exchanged between different computers.
+        This is done by using JavaScript language instructions, in a specific format,
+        to describe the various characteristics of the object that is to be exchanged.
+
+        The JSON.stringify() method takes JavaScript objects and converts them to JSON strings.
+        For data to be stored to a web server it needs to be serialized (converted into a string).
+        In other words, the data needs to be converted from an object to a string format.
+
+        The code above has an object “dog” with key/value pairs.
+        For this data to be saved on a web server, the keys and their values
+        need to be converted to string formats.
+    
+        In our code, the JSON.stringify() method took the key objects and
+        the string values and converted them into string formats for the web browser
+        to properly read. -->
+</body>
+
+</html>
