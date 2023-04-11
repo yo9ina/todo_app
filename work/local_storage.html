@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="myDog"></p>
+    <script>
+        /* set the data as a key/value pair to be saved locally in your browser */
+        localStorage.setItem("Name", "Dax");
+
+        /* then use the key "Name" to return its value "Dax" */
+        document.getElementById("myDog").innerHTML = localStorage.getItem("Name");
+    </script>
+
+    <!--
+    localStorage() is a JavaScript method that will store data locally
+    in the web browser without the need for utilizing a separate database.
+    The data will persist in the browser’s memory and the data will not be deleted
+    even if the web browser has been closed.
+    Local storage doesn't get sent back and forth with every HTTP request
+    and so it speeds up webpage load time.
+-->
+
+</body>
+
+</html>
