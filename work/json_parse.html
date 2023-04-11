@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="myDog"></p>
+    <script>
+        /* This is a JSON string variable */
+        var dog = '{ "name": "Dax", "breed": "Great Pyrenees", "color": "White" }';
+
+        /* Convert JSON strings to JavaScript objects */
+        var JSONstring = JSON.parse(dog);
+        document.getElementById("myDog").innerHTML = JSONstring.name + " the " + JSONstring.breed;
+    </script>
+
+    <!--
+    The exact opposite of JSON.stringify() is the JSON.parse() method.
+    Meaning, it takes a JSON string and converts it to a JavaScript object.
+    When the data is requested, it is then reverted from a string format back to
+    an object on the webpage.
+-->
+
+</body>
+
+</html>
